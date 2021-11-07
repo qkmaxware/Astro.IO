@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!--<TargetFramework>net5</TargetFramework>
+    <OutputType>exe</OutputType>-->
+
+    <LangVersion>8</LangVersion>
+	  <PackageId>Qkmaxware.Astro.IO</PackageId>
+    <Version>1.0.0-rc1</Version>
+    <Authors>Colin Halseth</Authors>
+    <PackageTags>astronomical;io</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/qkmaxware/Astro.IO.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageDescription>
+      Qkmaxware.Astro.IO is a collection of serializers and deserializers for various filetypes used in astronomy.
+    </PackageDescription>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.md" CopyToOutputDirectory="Always" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Qkmaxware.Measurement" Version="1.0.9" />
+  </ItemGroup>
+
+</Project>
